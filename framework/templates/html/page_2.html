@@ -1,0 +1,43 @@
+<%inherit file="/html/base.html"/>
+
+<%block name="content">
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <div>
+                <h3>
+                    Here id page_2 demo ``
+                </h3>
+            </div>
+        </div>
+
+        </nav>
+        </div>
+            <div class="row border-bottom white-bg dashboard-header">
+                header
+            </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content">
+                    content
+                    <p>username: ${request.user.username}</p>
+                    <p>chname: ${request.user.chname}</p>
+                    <p>qq: ${request.user.qq}</p>
+                    <p>email: ${request.user.email}</p>
+                    <p>phone: ${request.user.phone}</p>
+                </div>
+
+</%block>
+
+
+<%block name="JavaScript">
+    <script>
+        $(document).ready(function() {
+            $("#sidebar-page-2").addClass("active");
+        });
+    </script>
+
+</%block>
+
